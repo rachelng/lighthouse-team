@@ -4,14 +4,21 @@ body {
 
 #team-members {
   clear: both; }
-
-#team-members .member {
-  float: left;
-  /*border: 1px solid gray;*/
-  margin: 10px;
-  padding: 6px; }
-  #team-members .member img {
+  #team-members .member {
+    float: left;
+    /*border: 1px solid gray;*/
+    margin: 10px;
+    padding: 6px; }
+  #team-members img {
     width: 200px;
     height: 200px; }
-  #team-members .member .name {
+  #team-members .wrap {
+    width: 200px;
+    height: 200px; }
+  #team-members .name {
     text-align: center; }
+
+.alt {
+  position: absolute; }
+  .alt:hover {
+    opacity: 0; }

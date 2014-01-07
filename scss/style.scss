@@ -7,18 +7,28 @@ body {
 
 #team-members {
   clear: both;
-}
-
-#team-members .member {
+  .member {
   float: left;
   /*border: 1px solid gray;*/
   margin: 10px;
   padding: 6px;
+  }
   img {
     width: 200px;
     height:200px;
   }
+  .wrap {
+    width:200px;
+    height:200px;
+  }
   .name {
     text-align: center;
+  }
+}
+
+.alt {
+  position: absolute;
+  &:hover {
+      opacity: 0;
   }
 }
