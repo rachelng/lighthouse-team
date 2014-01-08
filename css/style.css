@@ -1,5 +1,5 @@
 body {
-  font-family: 100% Verdana, sans-serif;
+  font: 100% Verdana, sans-serif;
   font-size: 1.5em; }
 
 #team-members {
@@ -11,14 +11,30 @@ body {
     padding: 6px; }
   #team-members img {
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); }
   #team-members .wrap {
     width: 200px;
     height: 200px; }
+    #team-members .wrap .alt {
+      position: absolute; }
+      #team-members .wrap .alt:hover {
+        opacity: 0; }
   #team-members .name {
     text-align: center; }
 
-.alt {
-  position: absolute; }
-  .alt:hover {
-    opacity: 0; }
+#container {
+  width: 800px;
+  margin: 0 auto; }
+  #container img {
+    width: 200px;
+    height: 280px;
+    margin-right: 20px;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); }
+  #container h1 {
+    font-weight: lighter; }
+  #container p {
+    font-size: 0.7em; }
