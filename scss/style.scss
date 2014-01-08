@@ -20,25 +20,53 @@ body {
     height:200px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0,0,0, 0.1);
+    -webkit-transition: opacity 0.8s;
   }
   
   .wrap {
     width:200px;
     height:200px;
-
-    .alt {
-    position: absolute;
-      &:hover {
-          opacity: 0;
+    &:hover {
+      .alt {
+        opacity: 0;
       }
     }
   }
-  
-  .name {
-    text-align: center;
+
+  .alt {
+    position: absolute;
   }
 }
 
+.member:nth-child(odd) {
+  .wrap {
+    img {
+        -webkit-transition: 0.5s ease-in-out;
+    }
+    &:hover {
+      .alt {
+        -webkit-transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.member:nth-child(even) {
+  .wrap {
+    img {
+        -webkit-transition: 0.5s ease-in-out;
+    }
+    &:hover {
+      .alt {
+        -webkit-transform: rotate(10deg);
+      }
+    }
+  }
+}
+
+.name {
+  text-align: center;
+}
 
 #container {
   width: 800px;
